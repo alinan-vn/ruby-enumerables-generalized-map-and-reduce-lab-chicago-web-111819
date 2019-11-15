@@ -12,7 +12,7 @@ end
 
 #map(source_code){|n| n * -1}
 
-def reduce(source_array, starting_point = 0)
+def reduce(source_array, starting_point = nil)
   value = starting_point 
   i = 0 
   while i < source_array.length do 

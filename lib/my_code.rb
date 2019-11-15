@@ -18,6 +18,8 @@ def reduce(source_array, starting_point = 0)
   while i < source_array.length do 
     if yield(value, source_array[i])
       value = yield(value, source_array[i])
+    elsif yield(value, source_array[i]) != true 
+      value = yield(value, source_array[i])
     end 
     
     # value = yield(value, source_array[i])

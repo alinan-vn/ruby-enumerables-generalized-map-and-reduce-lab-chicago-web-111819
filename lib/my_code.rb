@@ -20,7 +20,8 @@ def reduce(source_array, starting_point = 0)
       value = yield(value, source_array[i])
     elsif yield(value, source_array[i]) != true 
       value = yield(value, source_array[i])
-    else value = true 
+    else 
+      value = true 
     end 
     
     # value = yield(value, source_array[i])
